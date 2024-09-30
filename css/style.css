@@ -4,7 +4,7 @@
     --color-dark: #212529;
     --color-body: #727272;
     --color-brand: #0D85D1;
-    --color-brand-light: #10A2FF;
+    --color-brand-light: #25aafd;
     --color-brand-rgb: 13, 133, 209;
     --box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.08);
     --transition: all 0.5s ease;
@@ -59,6 +59,10 @@ img {
     font-weight: 600;
     color: var(--color-dark);
     cursor: pointer;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--color-brand);
 }
 
 .navbar-nav .nav-link.active {
@@ -116,4 +120,32 @@ footer .line {
 
 .footer-icon {
     color: var(--color-brand);
+}
+
+/* BUTTON */
+.btn {
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 0;
+    padding: 10px 24px;
+}
+
+.btn-brand {
+    background-color: var(--color-brand);
+    border-color: var(--color-brand);
+    color: white;
+}
+
+.btn-brand:hover {
+    background-color: var(--color-brand-light);
+    border-color: var(--color-brand-light);
+    color: black;
+}
+
+/* HERO */
+#hero {
+    background: linear-gradient(rgba(var(--color-brand-rgb), 0.4), rgba(var(--color-brand-rgb), 0.4)), url(../img/hero.jpg);
+    background-position: center;
+    background-size: cover;
 }
