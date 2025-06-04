@@ -290,3 +290,78 @@ footer .line {
     height: 360px;
     border: 0;
 }
+
+/* TESTIMONIALS */
+.scroll-wrapper {
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE 10+ */
+}
+
+.scroll-wrapper::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari */
+}
+
+.scroll-track {
+    scroll-snap-align: start;
+    display: flex;
+    animation: scrollLeft 30s linear infinite;
+    width: max-content;
+}
+
+.testimonial-card {
+    scroll-snap-align: start;
+}
+
+@keyframes scrollLeft {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+
+/* BLOG PAGE */
+.blog-section {
+    padding: 60px 0;
+}
+
+.blog-img {
+    max-height: 400px;
+    object-fit: cover;
+}
+
+
+/* ABOUT PAGE */
+#vision-mission h2 {
+    font-weight: 700;
+}
+
+#vision-mission p {
+    font-size: 1rem;
+    color: #333;
+}
+
+#values .bg-white:hover {
+    transform: translateY(-5px);
+    transition: 0.3s ease;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+
+/* FAQ */
+
+.accordion-button:focus {
+    box-shadow: none;
+    outline: none;
+}

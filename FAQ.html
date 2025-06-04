@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Website Title -->
-    <title>Home - Mpkat.com</title>
+    <title>FAQ - Mpkat</title>
 
     <!-- Website Fevicon -->
     <link rel="shortcut icon" href="./img/fevicon.png" type="image/x-icon">
@@ -47,7 +47,7 @@
                         <a class="nav-link" href="/index.html">Home</a>
                     </li>
                     <li class="nav-item dropdown custom-dropdown">
-                        <a class="nav-link" id="servicesDropdown" role="button">
+                        <a class="nav-link active" id="servicesDropdown" role="button">
                             Services
                         </a>
                         <ul class="dropdown-menu custom-dropdown-menu" aria-labelledby="servicesDropdown">
@@ -66,7 +66,7 @@
                         <a class="nav-link" href="/about.html">About us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="/contact.html">Contact Us</a>
+                        <a class="nav-link" href="/contact.html">Contact Us</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/careers.html">Careers</a>
@@ -79,73 +79,116 @@
         </div>
     </nav>
 
-    <!-- CONTACT US -->
-    <section id="contact" class="section-padding bg-light">
+    <!-- FAQ PAGE -->
+
+    <!-- HERO SECTION -->
+    <section class="section-padding text-center">
         <div class="container">
-            <div class="row">
-                <div class="col-12 text-center">
+            <div class="row mb-3">
+                <div class="col-12">
                     <div class="section-title">
-                        <h6>Contact us</h6>
-                        <h1 class="display-4 text-dark fw-semibold">Get in Touch</h1>
-                        <p class="text-dark">Have a question or need a quote? Fill out the form below, & our team
-                            will get back to you promptly with the information you need!</p>
+                        <h6>Frequently Asked Questions</h6>
+                        <h1>Explore Common Inquiries</h1>
+                        <p>
+                            Have questions? We've got answers! Browse our FAQ to learn more about our
+                            services and processes.
+                        </p>
                     </div>
                 </div>
             </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <form action="" class="row g-3 p-lg-5 p-4 bg-white theme-shadow">
-                        <div class="form-group col-lg-6">
-                            <input type="text" class="form-control" name="full_name" id="full_name"
-                                placeholder="Enter full name">
+
+            <div class="accordion accordion-flush shadow-sm rounded" id="faqAccordion">
+                <!-- FAQ Item -->
+                <div class="accordion-item mb-3 border rounded outline-0">
+                    <h2 class="accordion-header" id="faqHeadingOne">
+                        <button class="accordion-button fw-semibold" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faqCollapseOne" aria-expanded="true" aria-controls="faqCollapseOne">
+                            <i class="ri-question-line me-2 text-primary"></i> What services does your company offer?
+                        </button>
+                    </h2>
+                    <div id="faqCollapseOne" class="accordion-collapse collapse show" aria-labelledby="faqHeadingOne"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body text-start">
+                            We offer data entry, real estate support, web development, digital marketing, SEO, and
+                            transportation services tailored to both small and large businesses.
                         </div>
-                        <div class="form-group col-lg-6">
-                            <input type="text" class="form-control" name="mobile_no" id="mobile_no"
-                                placeholder="Enter mobile number">
+                    </div>
+                </div>
+
+
+                <!-- FAQ Item -->
+                <div class="accordion-item mb-3 border rounded">
+                    <h2 class="accordion-header" id="faqHeadingTwo">
+                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faqCollapseTwo" aria-expanded="false" aria-controls="faqCollapseTwo">
+                            <i class="ri-question-line me-2 text-primary"></i> How do I get started with your data entry
+                            service?
+                        </button>
+                    </h2>
+                    <div id="faqCollapseTwo" class="accordion-collapse collapse" aria-labelledby="faqHeadingTwo"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body text-start">
+                            You can contact us via our website or email. Once we understand your requirements, we’ll
+                            provide a quote and begin the onboarding process.
                         </div>
-                        <div class="form-group col-lg-12">
-                            <input type="email" class="form-control" name="email" id="email"
-                                placeholder="Enter email address">
+                    </div>
+                </div>
+
+                <!-- FAQ Item -->
+                <div class="accordion-item mb-3 border rounded">
+                    <h2 class="accordion-header" id="faqHeadingThree">
+                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faqCollapseThree" aria-expanded="false" aria-controls="faqCollapseThree">
+                            <i class="ri-question-line me-2 text-primary"></i> Are your services customizable?
+                        </button>
+                    </h2>
+                    <div id="faqCollapseThree" class="accordion-collapse collapse" aria-labelledby="faqHeadingThree"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body text-start">
+                            Yes, all our services are fully customizable based on your business needs, industry, and
+                            goals.
                         </div>
-                        <div class="form-group col-lg-12">
-                            <input type="text" class="form-control" name="subject" id="subject"
-                                placeholder="Enter subject">
+                    </div>
+                </div>
+
+                <!-- FAQ Item -->
+                <div class="accordion-item mb-3 border rounded">
+                    <h2 class="accordion-header" id="faqHeadingFour">
+                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faqCollapseFour" aria-expanded="false" aria-controls="faqCollapseFour">
+                            <i class="ri-question-line me-2 text-primary"></i> What is your data security policy?
+                        </button>
+                    </h2>
+                    <div id="faqCollapseFour" class="accordion-collapse collapse" aria-labelledby="faqHeadingFour"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body text-start">
+                            We follow strict data security protocols, including encrypted storage, access control, and
+                            NDAs to ensure your data remains safe and confidential.
                         </div>
-                        <div class="form-group col-lg-12">
-                            <textarea class="form-control" name="message" id="message" rows="5"
-                                placeholder="Enter message"></textarea>
+                    </div>
+                </div>
+
+                <!-- FAQ Item -->
+                <div class="accordion-item mb-3 border rounded">
+                    <h2 class="accordion-header" id="faqHeadingFive">
+                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faqCollapseFive" aria-expanded="false" aria-controls="faqCollapseFive">
+                            <i class="ri-question-line me-2 text-primary"></i> What is the turnaround time for your
+                            services?
+                        </button>
+                    </h2>
+                    <div id="faqCollapseFive" class="accordion-collapse collapse" aria-labelledby="faqHeadingFive"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body text-start">
+                            It depends on the complexity of the project. For most data entry tasks, we deliver results
+                            within 24-72 hours.
                         </div>
-                        <div class="form-group col-lg-12 d-grid">
-                            <button class="btn btn-brand">Send message</button>
-                        </div>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- GOOGLE MAP -->
-    <section class="map-section my-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <div class="section-title">
-                        <h6>Google map</h6>
-                        <h1 class="display-5 text-dark fw-semibold">Find Us Here</h1>
-                        <p class="text-dark">
-                            Need support or a quick quote? Fill out the form or find us using the map
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <h2 class="text-center mb-4"></h2>
-            <div class="map-container">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3115.8295811242133!2d78.29908487388145!3d11.475548088718927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bab9556d59ae813%3A0x49839b7e18d2f2e4!2sMPKAT%20%7C%20Software%20Company%20in%20Salem!5e1!3m2!1sen!2sin!4v1747141807513!5m2!1sen!2sin"
-                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </div>
-    </section>
 
     <!-- FOOTER -->
     <footer class="bg-dark">
@@ -157,7 +200,8 @@
                             <img src="./img/logo-white.png" alt="Logo" width="75px">
                         </a>
                         <div class="my-3 text-white">
-                            Founded in 2024, MPKAT.com excels in data entry, digital marketing, & web development services.
+                            Founded in 2024, MPKAT.com excels in data entry, digital marketing, & web development
+                            services.
                         </div>
                         <div class="social-icons">
                             <a href="https://x.com/MPKAT2024">
