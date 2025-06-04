@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Website Title -->
+    <title>Blogs - Mpkat</title>
+
+    <!-- Website Fevicon -->
+    <link rel="shortcut icon" href="./img/fevicon.png" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Remix Icon CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav id="mpkat-navbar" class="navbar navbar-expand-lg bg-white sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="./img/logo-white.png" alt="Logo" width="50px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown custom-dropdown">
+                        <a class="nav-link" id="servicesDropdown" role="button">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu custom-dropdown-menu" aria-labelledby="servicesDropdown">
+                            <li>
+                                <a class="dropdown-item" href="/data-entry.html">Data Entry</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="/digital-marketing.html">Digital Marketing</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="/web-development.html">Web Development</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about.html">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/careers.html">Careers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/blog.html">Blogs</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog 1 -->
+    <section id="blog1" class="blog-section bg-light">
+        <div class="container">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-6">
+                    <img src="/img/blogs/web-development.jpg" class="img-fluid blog-img rounded shadow"
+                        alt="Web Development Blog">
+                </div>
+                <div class="col-lg-6">
+                    <h2>10 JavaScript Tips Every Developer Should Know</h2>
+                    <p class="text-muted">Oct 1, 2025</p>
+                    <p>In today’s rapidly evolving web development landscape, mastering JavaScript is crucial. This
+                        article outlines ten modern tips and best practices that every JavaScript developer should know
+                        — including ES6+ features, performance hacks, and clean code techniques. Embrace destructuring,
+                        arrow functions, async/await patterns, and much more to level up your development workflow.</p>
+                    <p>Whether you're building SPAs or server-side apps, these practical insights will save time and
+                        enhance readability and maintainability.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog 2 -->
+    <section id="blog2" class="blog-section bg-white">
+        <div class="container">
+            <div class="row align-items-center g-4 flex-lg-row-reverse">
+                <div class="col-lg-6">
+                    <img src="/img/blogs/digital-marketing.jpg" class="img-fluid blog-img rounded shadow"
+                        alt="Digital Marketing Blog">
+                </div>
+                <div class="col-lg-6">
+                    <h2>SEO Strategies That Work in 2025</h2>
+                    <p class="text-muted">Sep 25, 2025</p>
+                    <p>SEO continues to evolve. In 2025, the focus is on user experience, Core Web Vitals, and
+                        AI-generated content. This blog explores how to leverage keyword intent, structured data, voice
+                        search optimization, and backlink quality to get noticed on Google.</p>
+                    <p>Whether you’re a marketer or a developer working on SEO-friendly websites, these insights will
+                        help you drive organic traffic and dominate the SERPs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog 3 -->
+    <section id="blog3" class="blog-section bg-light">
+        <div class="container">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-6">
+                    <img src="/img/blogs/data-entry.jpg" class="img-fluid blog-img rounded shadow"
+                        alt="Data Analytics Blog">
+                </div>
+                <div class="col-lg-6">
+                    <h2>How Data Analytics Drives Growth</h2>
+                    <p class="text-muted">Sep 18, 2025</p>
+                    <p>Data analytics is not just for large enterprises. This blog highlights how small and medium
+                        businesses are using data to predict trends, improve customer retention, and increase ROI. From
+                        Excel to modern BI tools, learn how data is driving strategic decisions.</p>
+                    <p>Discover how to implement actionable data strategies and turn raw data into powerful insights
+                        that impact your business success.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row gy-5">
+                    <div class="col-lg-3 col-sm-6">
+                        <a href="/index.html">
+                            <img src="./img/logo-white.png" alt="Logo" width="75px">
+                        </a>
+                        <div class="my-3 text-white">
+                            Founded in 2024, MPKAT.com excels in data entry, digital marketing, & web development
+                            services.
+                        </div>
+                        <div class="social-icons">
+                            <a href="https://x.com/MPKAT2024">
+                                <i class="ri-twitter-line"></i>
+                            </a>
+                            <a href="https://www.youtube.com/@MPKAT-2024">
+                                <i class="ri-youtube-line"></i>
+                            </a>
+                            <a href="">
+                                <i class="ri-facebook-line"></i>
+                            </a>
+                            <a href="">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <h5 class="text-white">SERVISES</h5>
+                        <div class="line"></div>
+                        <ul>
+                            <li><a href="/data-entry.html">Data Entry</a></li>
+                            <li><a href="/digital-marketing.html">Digital Marketing</a></li>
+                            <li><a href="web-development.html">Web Develpoment</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <h5 class="text-white">Quick Links</h5>
+                        <div class="line"></div>
+                        <ul>
+                            <li><a href="/about.html">About us</a></li>
+                            <li><a href="/contact.html">Contact us</a></li>
+                            <li><a href="/team.html">Our team</a></li>
+                            <li><a href="/careers.html">Careers</a></li>
+                            <li><a href="/blog.html">Blogs</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <h5 class="text-white">Contact info</h5>
+                        <div class="line"></div>
+                        <ul>
+                            <li><i class="ri-map-pin-2-fill footer-icon"></i> MPKAT Pvt Ltd, 196/4C2C,</li>
+                            <li>Attur main road, Seerapalli,</li>
+                            <li class="mb-2">namagiripettai - 637406</li>
+                            <li class="mb-2"><i class="ri-mail-fill footer-icon"></i> info@mpkat.com</li>
+                            <li><i class="ri-phone-fill footer-icon"></i> 0428 725 2999</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row g-4 justify-content-between">
+                    <div class="col-auto">
+                        <p class="mb-0">2025 © Mpkat PVT LTD. All Rights Reserved.</p>
+                    </div>
+                    <div class="col-auto">
+                        <p class="mb-0">
+                            Designed by
+                            <a href="https://www.linkedin.com/in/saravanan-ravi-4aa286167/" target="_blank">
+                                Saravanan Ravi
+                            </a>
+                            <a class="ms-1" href="https://github.com/saravananravi333" target="_blank"><i
+                                    class="ri-github-line"></i></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- External JS -->
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>
