@@ -1,4 +1,4 @@
-# Project Registration – MPKAT Pvt Ltd
+# MPKAT Pvt Ltd
 
 ## 🏢 Company Overview
 
